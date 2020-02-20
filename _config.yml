@@ -8,4 +8,4 @@ telegram: "jeslinmx"
 github_url: "https://github.com/jeslinmx"
 tiles-source: "pages"
 
-exclude: ["README", "TODO"]
+exclude: ["README", "TODO", "CNAME"]
