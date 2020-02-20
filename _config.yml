@@ -1,4 +1,5 @@
 theme: forty_jekyll_theme
+remote_theme: andrewbanchich/forty-jekyll-theme
 
 title: "Jeshua Lin"
 description: "test"
