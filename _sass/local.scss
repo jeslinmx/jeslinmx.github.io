@@ -4,11 +4,12 @@
     background-attachment: fixed;
     background-position: center;
 }
-section:not(#banner) span.image {
-    @include vendor("transition", "transform 0.1s linear");
+span.image.showcase {
+    @include vendor("transition", ("transform 0.1s linear", "box-shadow 0.1s linear"));
 }
-section:not(#banner) span.image:hover {
-    @include vendor("transform", "scale(1.01)");
+span.image.showcase:hover {
+    @include vendor("transform", "scale(1.02)");
+    @include vendor("box-shadow", "0 0 20px 0 rgba(0,0,0,0.25)");
 }
 .bop {
     @include vendor("animation", "3s ease-in-out 0s infinite alternate both running bop");
