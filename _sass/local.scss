@@ -4,27 +4,18 @@
     background-attachment: fixed;
     background-position: center;
 }
-
+section:not(#banner) span.image {
+    @include vendor("transition", "transform 0.1s linear");
+}
+section:not(#banner) span.image:hover {
+    @include vendor("transform", "scale(1.01)");
+}
 .bop {
     @include vendor("animation", "3s ease-in-out 0s infinite alternate both running bop");
     @include vendor("filter", "drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.2))");
 }
 .bop-delay {
     @include vendor("animation-delay", "500ms");
-}
-body.is-loading #main {
-    opacity: 0;
-    @include vendor("animation", "none !important");
-}
-#main {
-    opacity: 1;
-    @include vendor("transition", "opacity 2.5s ease 1s");
-}
-section span.image {
-    @include vendor("transition", "transform 0.1s linear");
-}
-section span.image:hover {
-    @include vendor("transform", "scale(1.01)");
 }
 @include keyframes("bop") {
     from {

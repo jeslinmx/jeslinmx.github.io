@@ -1,5 +1,4 @@
-theme: forty_jekyll_theme
-remote_theme: andrewbanchich/forty-jekyll-theme
+remote_theme: jeslinmx/forty-jekyll-theme
 
 title: "Jeshua Lin"
 description: "test"
@@ -9,3 +8,6 @@ github_url: "https://github.com/jeslinmx"
 tiles-source: "pages"
 
 exclude: ["README", "TODO", "CNAME"]
+
+plugins:
+  - jekyll-remote-theme
