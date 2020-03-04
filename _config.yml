@@ -3,9 +3,10 @@ remote_theme: jeslinmx/forty-jekyll-theme
 title: "Jeshua Lin"
 description: "test"
 email: "jlin025@e.ntu.edu.sg"
-telegram: "jeslinmx"
 github_url: "https://github.com/jeslinmx"
+telegram_url: "https://t.me/jeslinmx"
 tiles-source: "pages"
+no_contact_form: true
 
 exclude: ["README", "TODO", "CNAME"]
 
