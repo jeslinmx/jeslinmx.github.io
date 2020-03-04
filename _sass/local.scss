@@ -1,22 +1,33 @@
-.section-bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+section {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    .image.bg-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        @include vendor("filter", "blur(4px)");
+        @include vendor("transition", "opacity #{_duration(banner)} ease");
+    }
 }
-span.image.showcase {
+
+.image.showcase {
     @include vendor("transition", ("transform 0.1s linear", "box-shadow 0.1s linear"));
+    &:hover {
+        @include vendor("transform", "scale(1.02)");
+        @include vendor("box-shadow", "0 0 20px 0 rgba(0,0,0,0.25)");
+    }
 }
-span.image.showcase:hover {
-    @include vendor("transform", "scale(1.02)");
-    @include vendor("box-shadow", "0 0 20px 0 rgba(0,0,0,0.25)");
-}
+
 .bop {
     @include vendor("animation", "3s ease-in-out 0s infinite alternate both running bop");
     @include vendor("filter", "drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.2))");
-}
-.bop-delay {
-    @include vendor("animation-delay", "500ms");
 }
 @include keyframes("bop") {
     from {
