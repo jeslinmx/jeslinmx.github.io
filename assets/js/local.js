@@ -1,1 +1,1 @@
-$("#itf, #hsr")._parallax('.bg-image', 0.5);
+$("#itf, #hsr, #spdc")._parallax('.bg-image', 0.5);
